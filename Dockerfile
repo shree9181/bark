@@ -1,5 +1,5 @@
 # Use an official Python runtime as the base image
-FROM bark
+FROM Ubuntu
 
 # Set the working directory in the container
 WORKDIR /app
