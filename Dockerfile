@@ -1,5 +1,5 @@
 # Use an official Python runtime as the base image
-FROM bark-trial
+FROM suno-ai/bark
 
 # Set the working directory in the container
 WORKDIR /app
