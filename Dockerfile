@@ -17,7 +17,7 @@ RUN pip install -r requirements.txt
 # Copy the entire repository to the working directory
 COPY . .
 
-RUN cd bark && pip install .
+RUN pip install git+https://github.com/suno-ai/bark.git
 
 # Expose the port on which your API will run
 #EXPOSE 8000
