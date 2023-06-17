@@ -24,4 +24,7 @@ RUN pip install git+https://github.com/suno-ai/bark.git
 #EXPOSE 8000
 
 # Define the command to start the API
+CMD ["python", "app.py"]
+
+# Define the command to start the API
 # CMD ["python", "app.py"]
