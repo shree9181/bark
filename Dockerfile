@@ -5,13 +5,15 @@ FROM ubuntu
 WORKDIR /app
 
 # Copy the requirements file to the working directory
-# COPY requirements.txt .
+COPY requirements.txt .
 
 # Install the dependencies
-# RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the entire repository to the working directory
 COPY . .
+
+RUN cd bark && pip install .
 
 # Expose the port on which your API will run
 #EXPOSE 8000
