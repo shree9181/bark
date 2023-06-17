@@ -6,7 +6,8 @@ WORKDIR /app
 
 RUN set -xe \
     && apt-get update -y \
-    && apt-get install -y python3-pip
+    && apt-get install -y python3-pip \
+    && apt-get install -y git
     
 # Copy the requirements file to the working directory
 COPY requirements.txt .
